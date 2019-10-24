@@ -62,7 +62,7 @@
     <div class="container">
       <div class="row" id="result">
         <div class="col-md-12">
-          <p>WaveNet model is evaluated on CMU database:</p>
+          <p>WaveNet model is evaluated on CMU database.</p>
             
           We show 4 systems for comparison:
           AMA-WORLD,
@@ -80,9 +80,10 @@
                           <th></th>
                           <th>Source</th>
                           <th>Target</th>
-                          <th>WaveNet256(100 utt)</th>
-                          <th>WaveNet256(500 utt)</th>
-                          <th>SVD32(100 utt)</th>
+                          <th>AMA-WORLD</th>
+                          <th>WaveNet-adp</th>
+                          <th>WaveNet-adp (50)</th>
+                          <th>WaveNet-SVD-adp</th>
                         </tr>
                       </thead>
                       <tbody>
@@ -90,34 +91,40 @@
                           <th scope="row">Sample 1</th>
                           <td>
                             <audio controls>
-                              <source src="./audio/clb/clb_1028.wav" type="audio/wav" />
+                              <source src="./audio/source/clb_1023.wav" type="audio/wav" />
                               Your browser does not support the audio element.
                             </audio>
                           </td>
                           <td>
                             <audio controls>
-                              <source src="./audio/slt/slt_1028.wav" type="audio/wav" />
+                              <source src="./audio/target/bdl_1023.wav" type="audio/wav" />
                               Your browser does not support the audio element.
                             </audio>
                           </td>
                           <td>
                             <audio controls>
-                              <source src="./audio/clb2slt/100utt-slt-256/clb-slt-clb_1028_256.wav" type="audio/wav" />
+                              <source src="./audio/ama-world/clb_bdl_1023.wav" type="audio/wav" />
                               Your browser does not support the audio element.
                             </audio>
                           </td>
                           <td>
                             <audio controls>
-                              <source src="./audio/clb2slt/500utt-slt-256/clb-slt-clb_1028_256.wav" type="audio/wav" />
+                              <source src="./audio/wavnet-adp/clb2bdl_1023_256.wav" type="audio/wav" />
                               Your browser does not support the audio element.
                             </audio>
                           </td>
                           <td>
                             <audio controls>
-                              <source src="./audio/clb2slt/100utt-slt-32/clb-slt-clb_1028_256_32.wav" type="audio/wav" />
+                              <source src="./audio/wavenet-adp-50/clb2bdl_1023_256.wav" type="audio/wav" />
                               Your browser does not support the audio element.
                             </audio>
                           </td>
+                          <td>
+                            <audio controls>
+                              <source src="./audio/wavenet-svd-adp/clb2bdl_1023_256_32.wav" type="audio/wav" />
+                              Your browser does not support the audio element.
+                            </audio>
+                          </td>                        
                         </tr>
                         <tr>
                           <th scope="row">Sample 2</th>
